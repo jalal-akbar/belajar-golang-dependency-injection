@@ -1,0 +1,26 @@
+### Get All Categories
+GET http://localhost:3001/api/categories
+X-API-Key: RAHASIA
+Accept: application/json
+### Create Category
+POST  http://localhost:3001/api/categories/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Perkakas"
+}
+### Get Category By Id
+GET http://localhost:3001/api/categories/1
+Accept: application/json
+### Update Category
+PUT http://localhost:3001/api/categories/2
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name":"Fashion"
+}
+### Delete Category
+DELETE http://localhost:3001/api/categories/3
+Accept: application/json
