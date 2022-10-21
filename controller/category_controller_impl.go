@@ -16,7 +16,7 @@ type CategoryControllerImpl struct {
 }
 
 // HTTP Router Impl
-func NewCategoryController(categoryService service.CategoryService) CategoryController {
+func NewCategoryController(categoryService service.CategoryService) *CategoryControllerImpl {
 	return &CategoryControllerImpl{
 		CategoryService: categoryService,
 	}

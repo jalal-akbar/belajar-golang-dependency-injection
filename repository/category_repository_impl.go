@@ -13,7 +13,7 @@ type CategoryRepositoryImpl struct {
 }
 
 // HTTP Router Impl
-func NewCategoryRepository() CategoryRepository {
+func NewCategoryRepository() *CategoryRepositoryImpl {
 	return &CategoryRepositoryImpl{}
 }
 

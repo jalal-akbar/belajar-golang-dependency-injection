@@ -19,7 +19,7 @@ type CategoryServiceImpl struct {
 }
 
 // HTTP Router Impl
-func NewCategoryServiceImpl(categoryRepository repository.CategoryRepository, db *sql.DB, validate *validator.Validate) CategoryService {
+func NewCategoryServiceImpl(categoryRepository repository.CategoryRepository, db *sql.DB, validate *validator.Validate) *CategoryServiceImpl {
 	return &CategoryServiceImpl{
 		CategoryRepository: categoryRepository,
 		DB:                 db,
